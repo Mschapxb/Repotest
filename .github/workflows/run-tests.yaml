@@ -16,3 +16,4 @@ jobs:
     - name: Run tests
       run: |
         pytest test_sum.py
+        pytest test.py
