@@ -1,0 +1,10 @@
+name: Check Requirements
+on: [push]
+jobs:
+  show-requirements:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: Display requirements.txt content
+      run: cat requirements.txt
